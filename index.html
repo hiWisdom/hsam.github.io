@@ -33,6 +33,13 @@
 
 
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+
+
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.min.js"></script>
@@ -41,38 +48,37 @@
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.min.js"></script>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
 
 <!-- Optional JavaScript; choose one of the two! -->    <!-- Option 1: Bootstrap Bundle with Popper -->    <!-- Option 2: Separate Popper and Bootstrap JS -->
 
+<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
 
 
 
 <!----Per-time Internal Stylesheet ---->
 <style>
-body { background:#030724;}
-main {background:red; width:100%;margin-top:100px;}
+body { background:white;border:12px inset #030724; }
+main {background:red;width:100%;margin-top:100px;}
 section {background:yellow; width:100%; margin-top:50px;}
 #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
 #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
 #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-.footer { height:200px; background:green; margin-top:50px;}
+.footer { height:200px; background:#030724/*green*/; margin-top:50px;}
 #carouselbody1 {margin-top:50px; z-index:10px; width:100%;}
-#section1 {background:red;width:200px;height:200px;margin:10px;border-radius:10%;transition: width 2s 0s ease-in-out, height 2s 0s ease-in-out;}
+#section1 {background:*#030724*;width:200px;height:200px;margin:10px;border-radius:10%;transition: width 2s 0s ease-in-out, height 2s 0s ease-in-out;}
 #section1:hover {width:220px;height:220px;}
 .colum {display:inline;}
 #ImagesInCarouselForSmMd {display:none;}
+#navbackground {
+    background-color: #030724;
+}
 
 @media (max-width:700px) {
 #ImagesInCarouselForSmMd {display:block;}
@@ -81,7 +87,7 @@ section {background:yellow; width:100%; margin-top:50px;}
 
 
 
-
+<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>
 
   </head>
   
@@ -100,8 +106,8 @@ section {background:yellow; width:100%; margin-top:50px;}
   
   <header>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+  <div class="container" id="navbackground">
 	
  <div id="logoP"> <a class="navbar-brand navbar_logo" href="index.html">WEB LOGO HERE<img src="weblogoheader.png"/></a> </div>
   
@@ -138,7 +144,7 @@ section {background:yellow; width:100%; margin-top:50px;}
 	
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -146,7 +152,7 @@ section {background:yellow; width:100%; margin-top:50px;}
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Welcome!!!<BR> CAR DEALER highskoolautos</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -166,6 +172,8 @@ section {background:yellow; width:100%; margin-top:50px;}
   </div>
 </nav>    
 
+
+<div class="container">
 <div id="section1" class="container-fluid">
   <h1>Section 1</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -191,15 +199,16 @@ section {background:yellow; width:100%; margin-top:50px;}
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-
+</div>
 	
 	
-	 <ul class="nav nav-tabs">
+<div class="container">	
+<ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
     <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
     <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
     <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-  </ul>
+</ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
@@ -220,7 +229,7 @@ section {background:yellow; width:100%; margin-top:50px;}
     </div>
   </div>
 </div>
-
+</div>
 	
 	
 	</main>
