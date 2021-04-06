@@ -60,20 +60,22 @@
 
 
 
+<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>
+
+
 <!----Per-time Internal Stylesheet ---->
 <style>
-body { background:white;border:12px inset #030724; }
-main {background:red;width:100%;margin-top:100px;}
-section {background:yellow; width:100%; margin-top:50px;}
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+body { background:white;border:12px outset #030724; border-bottom-width:9em;border-top:none; }
+main {background:white;width:100%;margin-top:100px;}
+section {background:white; width:100%; margin-top:50px;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
+#section5 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
 .footer { height:200px; background:#030724/*green*/; margin-top:50px;}
 #carouselbody1 {margin-top:50px; z-index:10px; width:100%;}
-#section1 {background:*#030724*;width:200px;height:200px;margin:10px;border-radius:10%;transition: width 2s 0s ease-in-out, height 2s 0s ease-in-out;}
-#section1:hover {width:220px;height:220px;}
+#section1 {background:#030724;animation:transform; width:200px;height:200px;margin:10px;border-radius:10%;transition: width 2s 0s ease-in-out, height 2s 0s ease-in-out;}
+#section1:hover {transform:scale(1.1);}
 .colum {display:inline;}
 #ImagesInCarouselForSmMd {display:none;}
 #navbackground {
@@ -86,8 +88,6 @@ section {background:yellow; width:100%; margin-top:50px;}
 </style>
 
 
-
-<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>
 
   </head>
   
@@ -103,17 +103,16 @@ section {background:yellow; width:100%; margin-top:50px;}
 
 
 
-  
   <header>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-lighter navbarcss">
   <div class="container" id="navbackground">
 	
  <div id="logoP"> <a class="navbar-brand navbar_logo" href="index.html">WEB LOGO HERE<img src="weblogoheader.png"/></a> </div>
   
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <p style="font-size:15px;margin:auto;color:#015ed5;">menu </p><!-----<i style="font-size:15px;margin:auto;color:#015ed5;" class="navbar-toggler-icon fab fa-github"></i>-----<span style="font-size:12px;margin:auto;color:#015ed5;" class="navbar-toggler-icon" ></span>--->
-  </button>
+    <p style="font-size:15px;margin:auto;color:#015ed5;">menu </p><!-----<i style="font-size:15px;margin:auto;color:#015ed5;" class="navbar-toggler-icon fab fa-github"></i> <span style="font-size:12px;margin:auto;color:#015ed5;" class="navbar-toggler-icon" ></span>
+-->  </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -144,6 +143,11 @@ section {background:yellow; width:100%; margin-top:50px;}
 	
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+
+
+
+<!--- READ COMMENT:::   high chance of leaving webpage. no use at the moment for we planning on building new design here.
+
 <nav class="navbar navbar-inverse navbar">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -170,32 +174,27 @@ section {background:yellow; width:100%; margin-top:50px;}
       </div>
     </div>
   </div>
-</nav>    
+</nav> ---->   
 
 
 <div class="container">
-<div id="section1" class="container-fluid">
+<div id="section2" class="container-fluid">
   <h1>Section 1</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-<div id="section2" class="container-fluid">
+<div id="section3" class="container-fluid">
   <h1>Section 2</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-<div id="section3" class="container-fluid">
+<div id="section4" class="container-fluid">
   <h1>Section 3</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-<div id="section41" class="container-fluid">
-  <h1>Section 4 Submenu 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section42" class="container-fluid">
-  <h1>Section 4 Submenu 2</h1>
+<div id="section5" class="container-fluid">
+  <h1>Section 4</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
@@ -213,7 +212,7 @@ section {background:yellow; width:100%; margin-top:50px;}
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooua.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Menu 1</h3>
@@ -323,6 +322,12 @@ section {background:yellow; width:100%; margin-top:50px;}
 	<div id="section1" data-asos="fade-left"></div>
 	<div id="section1" data-asos="fade-left"></div>
 	
+	<div id="section1" data-asos="fade-left"></div>
+	<div id="section1" data-asos="fade-left"></div>
+	<div id="section1" data-asos="fade-left"></div>
+	<div id="section1" data-asos="fade-left"></div>
+	<div id="section1" data-asos="fade-left"></div>
+	
 	
 	
 	
@@ -388,7 +393,10 @@ section {background:yellow; width:100%; margin-top:50px;}
 	<nav class="navbar fixed-bottom navbar-light bg-transparent">
 	<div class="container">
 	<div class="colum">
-    <a class="navbar-brand" href="#">Social Media Links Here</a> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href=""><img src="jiji.jpg" height="30px" width="30px"></a>
+    <a class="navbar-brand" href="#"><p style="color:white;">Social Media Links Here</p></a> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href=""><img src="jiji.jpg" height="30px" width="30px"></a>
+	</div>
+	<div class="colum">
+	<p style="color:white;" class="lead">HHF &copy Right 2021</p>
 	</div>
 	</div>
 	</nav>
