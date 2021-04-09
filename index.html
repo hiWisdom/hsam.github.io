@@ -65,7 +65,7 @@
 
 <!----Per-time Internal Stylesheet ---->
 <style>
-body { background:white;border:12px outset #030724; border-bottom-width:9em;border-top:none; }
+body { background:white;border:12px outset #030724; border-bottom-width:9em;/*border-top:none;*/ }
 main {background:white;width:100%;margin-top:100px;}
 section {background:white; width:100%; margin-top:50px;}
 #section2 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
@@ -81,6 +81,9 @@ section {background:white; width:100%; margin-top:50px;}
 #navbackground {
     background-color: #030724;
 }
+
+.tabs_content {color:red;}
+
 
 @media (max-width:700px) {
 #ImagesInCarouselForSmMd {display:block;}
@@ -103,10 +106,10 @@ section {background:white; width:100%; margin-top:50px;}
 
 
 
-  <header>
+  <header class="fixed-top">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-lighter navbarcss">
-  <div class="container" id="navbackground">
+  <div class="container-fluid" id="navbackground">
 	
  <div id="logoP"> <a class="navbar-brand navbar_logo" href="index.html">WEB LOGO HERE<img src="weblogoheader.png"/></a> </div>
   
@@ -200,42 +203,85 @@ section {background:white; width:100%; margin-top:50px;}
 </div>
 </div>
 	
+	<div class="container">
+	<div class="row">
+	
+	<div id="content">
+	
+	<div id="contentA">
+	<button onclick="activeA()" id="activeA()"><p class="activesa">Buy Cars</p></button>
+	<div class="cols-lg-4" id="tab1">
+	<p>Search And Purchase Your Dream Car With Me</p>
+	</div>
+	
+	</div>
 	
 	
+	<div class="contentB">
+	<button onclick="activeB()" id="activeB()"><p class="activesa">Sell Cars</p></button>
+	<div class="cols-lg-4" id="tab2" style="display:none;">
+	<p>Tell US What You Looking For</p>
+	</div>
+
+	</div>
 	
+	<script>
+	<!---script written by wisdom--->
 	
-<div class="container">	
+	var activeTab1 = document.getElementById("tab1");
+	var activeTab2 = document.getElementById("tab2");
+	
+	function activeA() {
+	activeTab1.style.display="block";
+	activeTab2.style.display="none";
+	}
+	
+	function activeB() {
+	activeTab1.style.display="none";
+	activeTab2.style.display="block";
+	}
+	<!---script written by wisdom--->
+	
+	</script>
+	
+	</div>
+	</div>
+	</div>
+	
+	<!---
+<div class="container" id="tabs_container">	
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+    <li class="tabs_content active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li class="tabs_content"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li class="tabs_content"><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li class="tabs_content"><a data-toggle="tab" href="#menu3">Menu 3</a></li>
 </ul>
   <div class="tab-content">
 
-    <div id="home" class="tab-pane fade in active">
+    <div id="home" class="tab-pane">
       <h3>HOME</h3>
 	  Toggle today and com back
+	  <img src="img1.png">
     </div>
 
-    <div id="menu1" class="tab-pane fade">
+    <div id="menu1" class="tab-pane">
       <h3>Menu 1</h3>
 	  Toggle today and com back
 	  </div>
 
-    <div id="menu2" class="tab-pane fade">
+    <div id="menu2" class="tab-pane">
       <h3>Menu 2</h3>
 	  Toggle today and com back
 	  </div>
 
-    <div id="menu3" class="tab-pane fade">
+    <div id="menu3" class="tab-pane">
       <h3>Menu 3</h3>
 	  Toggle today and com back
 	  </div>
   </div>
   
 </div>
-
+--->
 	
 	</main>
 
