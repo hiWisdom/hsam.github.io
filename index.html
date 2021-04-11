@@ -66,42 +66,57 @@
 <!----Per-time Internal Stylesheet ---->
 <style>
 body { background:white;border:12px outset #030724; border-bottom-width:11em;border-top:none; }
-#activeA{background:red;}
 main {background:white;width:100%;margin-top:100px;}
 section {background:white; width:100%; margin-top:50px;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
+.firstmainsection {margin:10px;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color:	beigh/*#009688*/;}
 #section3 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
 #section4 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
 #section5 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
-.footer { width:100%;height:200px;background:#030724; margin-top:50px;}
+.footer {width:1330px;height:200px;background:#030724; margin-top:50px;margin-left:-10px;}
 #btn {background-color:#030724;}
-#content {display:block;position:relative;left:200;border:2px solid black;}
+#content {border:2px solid black;display:block;position:relative;left:200;}
 #carouselbody1 {margin-top:50px; z-index:10px; width:100%;}
 #section1 {background:#030724;animation:transform;margin:10px;border-bottom-radius:10%;transition:transform 2s 0s ease-in-out;}
 #section1:hover {transform:scale(1.1);}
 ul>li{color:white;font-size:13px;letter-spacing:2px;line-height:2em;font-weight:bold;list-style-type:none;} 
-#contentdecorator{margin-left:400px;}
+
+.contentdecorator{margin-left:300px;}
+.tabs {width:50%; margin:auto;color:#009688}
 #buttonsdecoration{margin:10px;}
-	#buttonsdecoration > button{width:90px;height:40px;}
-.activesa {font-size:13px; color:silver; letter-spacing:2px;font-weight:bold;font-stretch:2px;}
-
-
-
-
+	#buttonsdecoration > button{margin-left:15px;width:95px;height:40px;}
+.activesa {font-size:15px;color:#009688;letter-spacing:2px;font-weight:bolder;font-stretch:10%;}
+#contentborder { border:2px outset #030724;width:260px;border-radius:100%;}
+.btnsndborderdec {width:70%; margin:auto;}
+.textndbtndec {text-align:center;line-height:2em;letter-spacing:2px;word-spacing:2px;font-weight:bolder}
+.tabslinks {background:#009688; padding:10px; border-radius:5%; width:250px;color:white;font-size:15px; font-weight:bolder }
+#firstmainsectiontextdecid {color:#030724;}
+#decsmall1 { color:#009688; }
 
 /*MEDIA QUERIES BEGINS*/
 
+
 @media (max-width:1000px) {
+.footer {background:transparent;width:100%;}
+
 ul{float:right;margin-top:-207px;padding:4%;}
 ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-height:2em;font-weight:bold;list-style-type:none;}
 
 #section1 {background:#030724;animation:none;margin:1px;border-bottom-radius:1%;transition:none;}
 #section1:hover {transform:none;}
 
-#content {display:block;}
-#contentdecorator{margin-left:100px;}
+
+.contentdecorator{margin-left:60px;}
+.tabs {width:50%; margin:auto;color:#009688}
 #buttonsdecoration{margin:10px;}
-	#buttonsdecoration > button{width:90px;height:40px;}
+	#buttonsdecoration > button{margin-left:15px;width:95px;height:40px;}
+.activesa {font-size:15px;color:#009688;letter-spacing:2px;font-weight:bolder;font-stretch:10%;}
+#contentborder { border:2px outset #030724;width:260px;border-radius:100%;}
+.btnsndborderdec {width:70%; margin:auto;}
+.textndbtndec {text-align:center;line-height:2em;letter-spacing:2px;word-spacing:2px;font-weight:bolder}
+.tab
+
+
 }
 </style>
 
@@ -123,24 +138,26 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
   <header>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
   <div class="container">
 	
  <div id="logoP"> <a class="navbar-brand navbar_logo" href="index.html"><img src="highskoolautomobile.jpg" width="30%" height="100%"/></a> </div>
   
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <p style="font-size:15px;margin:auto;color:#015ed5;">menu </p><!-----<i style="font-size:15px;margin:auto;color:#015ed5;" class="navbar-toggler-icon fab fa-github"></i> <span style="font-size:12px;margin:auto;color:#015ed5;" class="navbar-toggler-icon" ></span>
--->  </button>
+    <p style="font-size:15px;margin:auto;color:#015ed5;">menu </p>  </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a style="color:#015ed5;font-size:14px;" class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i>&nbsp Home</a>
+          <a style="color:#009688;font-size:14px;" class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i>&nbsp Home</a>
         </li>
         <li class="nav-item">
-          <a style="color:#015ed5;font-size:14px;" class="nav-link" href="#"><i class="fas fa-link"></i>&nbsp Links</a>
+          <a style="color:#009688;font-size:14px;" class="nav-link" href="#buycar"><i class="fas fa-car"></i>&nbsp Buy Car</a>
         </li>
         <li class="nav-item">
-          <a style="color:#015ed5;font-size:14px;" class="nav-link" href="#"><i class="fas fa-blog"></i>&nbsp Blog</a>
+          <a style="color:#009688;font-size:14px;" class="nav-link" href="#sellcar"><i class="fas fa-car"></i>&nbsp Sell Car</a>
+        </li>
+		<li class="nav-item">
+          <a style="color:#009688;font-size:14px;" class="nav-link" href="#"><i class="fas fa-link"></i>&nbsp Car Update</a>
         </li>
         
       </ul>
@@ -158,49 +175,43 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	
 <div class="container">
-<div id="section2" class="container-fluid">
-  <h1>Section 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section3" class="container-fluid">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section4" class="container-fluid">
-  <h1>Section 3</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section5" class="container-fluid">
-  <h1>Section 4</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-</div>
+<div id="section2" class="container-fluid firstmainsection">
+  <h1 class="display-1 firstmainsectiontextdec" id="firstmainsectiontextdecid">welcome to HighSkoolAutosMobile|</h1><small id="decsmall1">Your Trusted Car Dealer</small>
 
-
-	
 	<div class="container">
 	<div class="row">
 	<div id="content">
 	
-	<div class="col-md-5" id="contentdecorator">
+	<div class="col-md-5 contentdecorator">
+	
+	<div class="btnsndborderdec">
 	<div id="buttonsdecoration">
-	<button onclick="activeA()" id="activebtnA" style="background:#030724;"><p class="activesa">Buy Cars</p></button>
-	<button onclick="activeB()" id="activebtnB"><p class="activesa">Sell Cars</p></button>
+	<div id="contentborder" class="contentborder"></div>
+	<button onclick="activeA()" id="activebtnA" style="background:#030724;border:none;border-radius:2%;"><p class="activesa">Buy Car</p></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button onclick="activeB()" id="activebtnB" style="border:none;border-radius:2%;"><p class="activesa">Sell Car</p></button>
+	<div id="contentborder" class="contentborder"></div>
 	</div>
-	<div class="cols-lg-4" id="tab1">
-	<img src="FB_IMG_1466449612696.jpg" class="image-responsive" width="200px" height="200px">
-	<p>Search And Purchase Your Dream Car With Me</p>
+	</div>
+	
+	<div class="cols-lg-4 tabs" id="tab1">
+	<img src="FB_IMG_1466449612696.jpg" width="200px" height="200px">
+	<div class="textndbtndec">
+	<div class="caption"><h3>Buy a Car</h3></div>
+	<p class="lead"style="word-spacing:0px;letter-spacing:1px;font-weight:bolder">Buy and purchase your Dream Car with me at an affordable Price.</p>
+	<a class="tabslinks" name="buycar" href="#">Buy Now </a>
+	</div>
 	</div>
 	
 	
-	<div class="cols-lg-4" id="tab2" style="display:none;">
-	<img src="	FB_IMG_1466624182969.jpg" class="image-responsive" width="200px" height="200px">
-	<p>Tell US What You Looking For</p>
+	<div class="cols-lg-4 tabs" id="tab2" style="display:none;">
+	<img src="	FB_IMG_1466624182969.jpg" width="200px" height="200px">
+	<div class="textndbtndec">
+	<div class="caption"><h3>Sell a Car</h3></div>
+	<p class="lead" style="word-spacing:0px;letter-spacing:1px;font-weight:bolder">Sell a car fast at a profitable rate and smile.</p>
+	<a class="tabslinks" name="sellcar" href="#">Sell Now </a>
 	</div>
+	</div>
+	
 	</div>
 	</div>
 	
@@ -232,14 +243,32 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	
 	</script>
-	
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid firstmainsection">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section4" class="container-fluid firstmainsection">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section5" class="container-fluid firstmainsection">
+  <h1>Section 4</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+</div>
+
+
 	
 
 
 	</main>
-
-
-
 
 
 
@@ -287,7 +316,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	</div>
 	</div>
 	
-	</div>
+	
 	
 	
 	<nav class="navbar fixed-bottom navbar-light bg-transparent">
@@ -301,7 +330,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	</div>
 	</nav>
 	
-	
+	</div>
 
 
 
@@ -328,7 +357,9 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
     AOS.init();
   </script>
   
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   
   
   
