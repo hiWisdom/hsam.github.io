@@ -19,7 +19,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="description" content="Car Dealer| Buy car | Sell car | Car documentation process">
+	<meta name="keywords" content="cars">
+	<meta name="author" content="Orodje">
 
 
    
@@ -66,16 +68,18 @@
 <!----Per-time Internal Stylesheet ---->
 <style>
 body { background:white;border:12px outset #030724; border-bottom-width:11em;border-top:none; }
+header{ height:58px; background:black;background:url(highskoolautomobilebackground.jpg);}
+#headerlinks { border:2px solid black;float:right;display:inline-block;position:relative;margin-right:900px;}
+#headerlinks > .connect { text-decoration:none;text-align:center;margin:10px;padding:10px;vertical-align:center;/*position:absolute;*/}
 main {background:white;width:100%;margin-top:100px;}
 section {background:white; width:100%; margin-top:50px;}
-.firstmainsection {margin:10px;}
 #section2 {padding-top:50px;height:500px;color: #fff; background-color:	beigh/*#009688*/;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
-#section4 {padding-top:50px;height:500px;color: #fff; background-color:	#009688;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color:transparent;}
+#section4 {padding-top:50px;height:500px;color: #fff; background:url(hsam3.jpg);}
 #section5 {padding-top:50px;height:500px;color: #fff; background-color:#00bcd4;}
 .footer {width:1330px;height:200px;background:#030724; margin-top:50px;margin-left:-10px;}
 #btn {background-color:#030724;}
-#content {border:2px solid black;display:block;position:relative;left:200;}
+
 #carouselbody1 {margin-top:50px; z-index:10px; width:100%;}
 #section1 {background:#030724;animation:transform;margin:10px;border-bottom-radius:10%;transition:transform 2s 0s ease-in-out;}
 #section1:hover {transform:scale(1.1);}
@@ -92,13 +96,30 @@ ul>li{color:white;font-size:13px;letter-spacing:2px;line-height:2em;font-weight:
 .tabslinks {background:#009688; padding:10px; border-radius:5%; width:250px;color:white;font-size:15px; font-weight:bolder }
 #firstmainsectiontextdecid {color:#030724;}
 #decsmall1 { color:#009688; }
+.columA {width:50%border:2px solid black;}
+.decicon {font-size:30px;margin:10px;}
+#jijidec {padding:5px; margin-top:-10px;}
 
 /*MEDIA QUERIES BEGINS*/
 
 
+@media (max-width:1350px) {
+.footer {background:transparent;width:100%;}
+.decicon {font-size:25px;margin:10px;}
+.contentdecorator{margin-left:10px;}
+.tabs {width:50%; margin:auto;color:#009688}
+#buttonsdecoration{margin:5px;}
+	#buttonsdecoration > button{margin-left:15px;width:95px;height:40px;}
+.activesa {font-size:15px;color:#009688;letter-spacing:2px;font-weight:bolder;}
+#contentborder { border:2px outset #030724;width:260px;border-radius:100%;}
+.btnsndborderdec {width:75%; margin:auto;}
+.textndbtndec {text-align:center;line-height:2em;letter-spacing:2px;word-spacing:2px;font-weight:bolder}
+
+}
+
 @media (max-width:1000px) {
 .footer {background:transparent;width:100%;}
-
+.decicon {font-size:20px;margin:10px;}
 ul{float:right;margin-top:-207px;padding:4%;}
 ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-height:2em;font-weight:bold;list-style-type:none;}
 
@@ -106,15 +127,15 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 #section1:hover {transform:none;}
 
 
-.contentdecorator{margin-left:60px;}
+.contentdecorator{margin-left:10px;}
 .tabs {width:50%; margin:auto;color:#009688}
-#buttonsdecoration{margin:10px;}
+#buttonsdecoration{margin:5px;}
 	#buttonsdecoration > button{margin-left:15px;width:95px;height:40px;}
-.activesa {font-size:15px;color:#009688;letter-spacing:2px;font-weight:bolder;font-stretch:10%;}
+.activesa {font-size:15px;color:#009688;letter-spacing:2px;font-weight:bolder;}
 #contentborder { border:2px outset #030724;width:260px;border-radius:100%;}
-.btnsndborderdec {width:70%; margin:auto;}
+.btnsndborderdec {width:75%; margin:auto;}
 .textndbtndec {text-align:center;line-height:2em;letter-spacing:2px;word-spacing:2px;font-weight:bolder}
-.tab
+
 
 
 }
@@ -136,9 +157,33 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 
 
-  <header>
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
+  <header class="fixed-top" id="header">
+  
+  
+<a class="navbar-brand navbar_logo" href="index.html"><img src="highskoolautomobile.jpg" width="180px" height="120%"/></a>
+    
+	    <div id="headerlinks">
+		
+		<div class="connect">
+		<a href=""><i class="fas fa-home"></i><h5>Home</h5></a>
+		</div>
+		<div class="connect">
+		<a href=""><i class="fas fa-home"></i><h5>Home</h5></a> 
+		</div>
+		<div class="connect">
+		<a href=""><i class="fas fa-home"></i><h5>Home</h5></a>
+		</div>
+		<div class="connect">
+		<a href=""><i class="fas fa-home"></i><h5>Home</h5></a>
+		</div>
+		<div class="connect">
+		<a href=""><i class="fas fa-home"></i><h5>Home</h5></a>
+		</div>
+		
+		</div>
+  
+<!---
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
   <div class="container">
 	
  <div id="logoP"> <a class="navbar-brand navbar_logo" href="index.html"><img src="highskoolautomobile.jpg" width="30%" height="100%"/></a> </div>
@@ -164,7 +209,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	</div>
 	</div>
 	</nav>
- 
+ --->
 	</header>
 	
 	
@@ -194,21 +239,21 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	</div>
 	
 	<div class="cols-lg-4 tabs" id="tab1">
-	<img src="FB_IMG_1466449612696.jpg" width="200px" height="200px">
+	<img src="hsam1.jpg" width="200px" height="200px">
 	<div class="textndbtndec">
 	<div class="caption"><h3>Buy a Car</h3></div>
 	<p class="lead"style="word-spacing:0px;letter-spacing:1px;font-weight:bolder">Buy and purchase your Dream Car with me at an affordable Price.</p>
-	<a class="tabslinks" name="buycar" href="#">Buy Now </a>
+	<a class="tabslinks" href="#">Buy Now </a>
 	</div>
 	</div>
 	
 	
 	<div class="cols-lg-4 tabs" id="tab2" style="display:none;">
-	<img src="	FB_IMG_1466624182969.jpg" width="200px" height="200px">
+	<img src="hsam2.jpg" width="200px" height="200px">
 	<div class="textndbtndec">
 	<div class="caption"><h3>Sell a Car</h3></div>
 	<p class="lead" style="word-spacing:0px;letter-spacing:1px;font-weight:bolder">Sell a car fast at a profitable rate and smile.</p>
-	<a class="tabslinks" name="sellcar" href="#">Sell Now </a>
+	<a class="tabslinks" href="#">Sell Now </a>
 	</div>
 	</div>
 	
@@ -244,19 +289,16 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	</script>
 
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
+
+
 <div id="section3" class="container-fluid firstmainsection">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section4" class="container-fluid firstmainsection">
-  <h1>Section 3</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
+<div class="container">
+<h2 class="display-2" style="color:#009688;">Top Cars Of 2020 And 2021</h2>
+<iframe title="USATODAY-Embed Player" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" src="https://uw-media.usatoday.com/embed/video/4906985002?placement=snow-embed"></iframe>
+</div></div>
+<div id="section4" class="container-fluid firstmainsection">  
+ </div>
 <div id="section5" class="container-fluid firstmainsection">
   <h1>Section 4</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -321,10 +363,10 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	<nav class="navbar fixed-bottom navbar-light bg-transparent">
 	<div class="container">
-	<div class="colum">
-    <a class="navbar-brand" href="#"><p style="color:white;">Social Media Links Here</p></a> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href=""><img src="jiji.jpg" height="30px" width="30px"></a>
+	<div class="columA">
+    <a class="navbar-brand" href="#"><a href=""><i class="fab fa-whatsapp decicon"></i></a> <a href="https://www.facebook.com/HSAautos"><i class="fab fa-facebook-square decicon"></i></a> <a href=""><i class="far fa-envelope decicon"></i></a> <a href=""><i class="fas fa-phone decicon"></i></a> <a href=""><img src="jiji.jpg" height="30px" width="30px" id="jijidec"></a>
 	</div>
-	<div class="colum">
+	<div class="columB">
 	<p style="color:white;" class="lead">HHF &copy Right 2021</p>
 	</div>
 	</div>
@@ -541,6 +583,13 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
     </div>
   </div>
 </nav>  
+
+
+
+
+
+
+<iframe title="USATODAY-Embed Player" width="540" height="350" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" src="https://uw-media.usatoday.com/embed/video/4906985002?placement=snow-embed"></iframe>
 ---->
 
 
