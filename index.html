@@ -67,21 +67,22 @@
 
 <!----Per-time Internal Stylesheet ---->
 <style>
+.firstmainsectiontextdec > a {text-decoration:none; font-weight:bolder;} .firstmainsectiontextdec:hover {text-decoration:underline};
 .fontani1 { animation-name:ofs; animation-duration:3s; animation-delay:1s; animation-iteration-count:infinite; animation-timing-function:linear;}
 @keyframes ofs {
 0% {color:red;} 20% {color:green;} 60% {color:yellow;} 100% {color:red;}
 } 
 body { background:white;border:12px outset #030724; border-bottom-width:15em;border-top:none;}
 header{ height:70px;background:url(highskoolautomobilebackground.jpg);}
-#logo {width:40%;margin-left:auto;margin-right:auto;}
+/*#logo {width:40%;margin-left:auto;margin-right:auto;}*/
 #headerlinks ul { border:2px solid black;float:right;display:flex;position:relative;top:-60px;right:10px;vertical-align:center;}
 ul {display:flex;}
 #headerlinks > .connect { text-decoration:none;text-align:center;font-weight:bolder;margin:10px;padding:10px;justify-content:space-between;}
 main {background:white;width:100%;margin-top:100px;}
 section {background:white; width:100%; margin-top:50px;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color:	beigh/*#009688*/;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color:transparent;}
-#section4 {padding-top:50px;height:500px;color: #fff; background:url(hsam3.jpg);}
+#section2 {padding-top:50px;height:auto;color: #fff; background-color:	beigh/*#009688*/;}
+#section3 {padding-top:50px;height:auto;color: #fff; background-color:transparent;}
+#section4 {padding-top:50px;height:auto;color: #fff; background:url(hsam3.jpg);}
 #section5 {padding-top:50px;}
 footer {margin-top:50px;}
 #btn {background-color:#030724;}
@@ -106,6 +107,7 @@ li {list-style-type:none;}
 .decicon {font-size:30px;margin:10px;}
 #jijidec {padding:5px; margin-top:25%;}
 .carsforsale {font-size:18px;font-weight:bold;color:white;}
+.advertimage {width:80%;}
 #footerlinks{margin:20px;font-size:15px;font-weight:bold;}
 .footerlinksitems {color:#009688;line-height:25px;text-decoration:none;} .footerlinksitems:hover {text-decoration:underline;}
 .footerlinksitemsheader {magin:20px;justify-content:space-between;padding:10px;}
@@ -114,7 +116,7 @@ li {list-style-type:none;}
 
 @media (max-width:1350px) {
 header{ height:40px;}
-#websitelogo{ width:150px; height:35px;}
+#websitelogo{ width:150px; height:35px;} #logo {width:40%;margin-left:auto;margin-right:auto;}
 .contentdecorator{margin-left:10px;}
 .tabs {width:50%; margin:auto;color:#009688}
 #buttonsdecoration{margin:5px;}
@@ -145,16 +147,23 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 
 @media (max-width:750px) {
-#footerlinks{width:100%; margin-left:auto; margin-right:auto;line-height:30px;font-size:12px;font-weight:bold;}
+#footerlinks{width:100%; margin-left:auto; margin-right:auto;line-height:40px;font-size:10px;font-weight:bolder;}
 .footerlinksitems {color:#009688;line-height:10px;text-decoration:none;} .footerlinksitems:hover {text-decoration:underline; color:red;}
-/*.footerlinksitemsheader {magin:20px;justify-content:space-between;padding:10px;}
-*/
+.footerlinksitemsheader {place-item:center;justify-content:center;}
+
 }
 
 
 }
 </style>
 
+
+<script>
+  
+  
+  
+alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
+</script>
 
 
   </head>
@@ -264,11 +273,11 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 <div class="container">
 <div id="section2" class="container-fluid firstmainsection">
-  <a href=""><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Authentic Cars For Sale</h3></a><br>
-  <a href=""><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Buy Cars</h3></a><br>
-  <a href=""><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Sell Cars</h3></a><br>
-  <a href=""><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Car Inspection</h3></a><br>
-  <a href=""><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Car Delivery</h3></a><br>  
+  <a href="#authenticcarsforsale"><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Authentic Cars For Sale</h3></a><br>
+  <a href="#buycar"><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Buy Cars</h3></a><br>
+  <a href="#sellcar"><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Sell Cars</h3></a><br>
+  <a href="#carinspection"><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Car Inspection</h3></a><br>
+  <a href="#cardelivery"><h3 class="display-2 firstmainsectiontextdec" id="firstmainsectiontextdecid">Car Delivery</h3></a><br>  
   
   <small id="decsmall1">Your Trusted Car Dealer</small>
   <BR>
@@ -367,7 +376,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -380,7 +389,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -393,7 +402,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -406,7 +415,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -419,7 +428,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -432,7 +441,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -445,7 +454,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -458,7 +467,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -471,7 +480,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -484,7 +493,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -497,7 +506,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -510,7 +519,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -523,7 +532,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -536,7 +545,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
-	<img src="hsam2.jpg" alt="" class="image-responsive">
+	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
 	<div class="caption">
 	<li class="carsforsale">Car Name</li>
 	<li class="carsforsale">Car Price</li>
@@ -570,7 +579,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	<div class="col-md-12" id="footerlinks">
 	
 	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
-	<li class="header">My Services </li>
+	<li class="header"><a name="authenticcarsforsale">Authentic Cars For Sale</a> </li>
 	<div id="contentborderquicklinks" class="contentborderfooter"></div>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
@@ -581,6 +590,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	
 	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
+	<li class="header"> <a name="buycar">Buy Car </a> </li>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
@@ -590,6 +600,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	
 	
 	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
+		<li class="header"> <a name="sellcar"> Sell Car </a> </li>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
@@ -598,6 +609,26 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	</div>
 	
 	
+	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
+		<li class="header"><a name="cardelivery">Car Delivery </a> </li>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+	</div>
+	
+	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
+		<li class="header"><a name="carinspection"> Car Inspection </a> </li>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+		<a class="footerlinksitems" href="">vacancy</a><BR>
+	</div>
+	
+	
+	<!----
 	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
@@ -613,23 +644,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 		<a class="footerlinksitems" href="">vacancy</a><BR>
 	</div>
-	
-	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-	</div>
-	
-	<div class="col-md-3 col-sm-2 col-xs-2 footerlinksitemsheader">
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-		<a class="footerlinksitems" href="">vacancy</a><BR>
-	</div>
-	
+	---->
 	
 	</div>
 	</div>
@@ -645,7 +660,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 	<div class="container">
 	<div class="row">
 	<div class="columA">
-    <div id="socialicons"><a href=""><i class="fab fa-whatsapp decicon"></i></a> <a href="https://www.facebook.com/HSAautos"><i class="fab fa-facebook-square decicon"></i></a> <a href=""><i class="far fa-envelope decicon"></i></a> <a href=""><i class="fas fa-phone decicon"></i></a> <a href=""><img src="jiji.jpg" height="33px" width="36px" id="jijidec"></a></div>
+    <div id="socialicons"><a href="http://api.whatsapp.com/send?phone=07011107461" target="_blank""><i class="fab fa-whatsapp decicon"></i></a> <a href="https://www.facebook.com/HSAautos"><i class="fab fa-facebook-square decicon"></i></a> <a href=""http://api.yahoo.com/send?mail=efeakpotor@yahoo.com"><i class="far fa-envelope decicon"></i></a> <a href="tel:+2347011107461"><i class="fas fa-phone decicon"></i></a> <a href=""><img src="jiji.jpg" height="33px" width="36px" id="jijidec"></a></div>
 	</div>
 	<div class="columB">
 	<div id="trademark"><p style="color:white; font-size:10px;" class="lead">UI | UX Developer is Orodje</p></div>
@@ -679,7 +694,8 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 
   <script>
     AOS.init();
-  </script>
+
+</script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
