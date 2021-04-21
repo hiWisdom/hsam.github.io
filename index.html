@@ -67,6 +67,7 @@
 
 <!----Per-time Internal Stylesheet ---->
 <style>
+* { text-decoration:none;}
 .firstmainsectiontextdec > a {text-decoration:none; font-weight:bolder; color:#030724;font-weight:bolder;} .firstmainsectiontextdec:hover {text-decoration:underline};
 .fontani1 { animation-name:ofs; animation-duration:3s; animation-delay:1s; animation-iteration-count:infinite; animation-timing-function:linear;}
 @keyframes ofs {
@@ -112,6 +113,9 @@ li {list-style-type:none;}
 .footerlinksitems {color:#009688;line-height:25px;text-decoration:none;} .footerlinksitems:hover {text-decoration:underline;}
 .footerlinksitemsheader {magin:20px;justify-content:space-between;padding:10px;}
 .header {color:#030724;}
+.quicklinks {font-size:95%;color:#030724;}
+.centralize_words {text-align:center; width:50%;margin:auto;place-item:center;}
+.search_with_make {text-align:center; width:100%;margin:auto;} .swm_text {font-size:15px; letter-spacing:1px;}
 /*MEDIA QUERIES BEGINS*/
 
 
@@ -272,6 +276,60 @@ alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
 	<main>
 	
 	
+<div class="container">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides videoplayback-->
+    <div class="carousel-inner">
+      <div class="item active">
+        <video style="width:100%;height:70%;">
+		<source src="videoplayback.mp4"/>
+		</video>
+	  </div>
+
+      <div class="item">
+        <img src="Untitled1.png" alt="Advertise" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="Untitled2.png" alt="Advertise" style="width:100%;">
+      </div>
+	  
+	  <div class="item">
+        <img src="slidepix1.png" alt="Advertise" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="McLaren-3.jpg" alt="Advertise" style="width:100%;">
+      </div>
+	  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
 	
 <div class="container">
 <div id="section2" class="container-fluid firstmainsection">
@@ -287,7 +345,7 @@ alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
   <BR>
   <BR>
   <BR>
-  <h3 class="display-1 firstmainsectiontextdec" id="firstmainsectiontextdecid">Kindly note this website is currently undergoing developnment</h3><br>
+<!--  <h3 class="display-1 firstmainsectiontextdec" id="firstmainsectiontextdecid">Kindly note this website is currently undergoing developnment</h3><br>---->
   <h3 class="display-3 firstmainsectiontextdec fontani1" id="firstmainsectiontextdecid"> open for sale</h3><i class="fas fa-arrow-down"></i>
 </div>
 	<!----<div class="container">
@@ -373,9 +431,242 @@ alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
 
 <div id="section5" class="container-fluid firstmainsection">
 
-<h2 class="display-2" style="color:#009688; font-weight:bolder;">Cars For Sale</h2><BR>
-<small style="color:#009688;font-weight:bolder;"> Check Out Cars For Sale </small>
+<div class="centralize_words">
+<i class="fas fa-car decfas_fa_car1"></i><h2 class="display-1" style="color:#009688; font-weight:bolder;"><i class="fas fa-car decfas_fa_car1"></i>&nbsp&nbspCar Search&nbsp&nbsp<i class="fas fa-car decfas_fa_car2"></i></h2><BR>
+<small style="color:#009688;font-weight:bolder;font-size:15px;"> Search car by <a href="#make"><small style="color:#009688;font-weight:bolder;font-size:15px;">make</small></a> and <a href="#type"><small style="color:#009688;font-weight:bolder;font-size:15px;">type</small></a> </small>
+<BR><BR><BR>
+<a name="make"><h5 class="display-3" style="color:#009688; font-size:16px; font-weight:bold; text-decoration:underline;">Search with make</h5></a>
+</div>
+<BR>
+<BR>
 
+<div class="search_with_make">
+
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+<table>
+
+
+<tr>
+<td><a href=""><p class="swm_text">Acura</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Alfa Romeo</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Aston Martin</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Audi</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Bentley</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">BMW</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Buick</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Cadillac</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Chevrolet</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Chrysler</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Dodge</p></a></td>
+</tr>
+
+
+
+</table>
+</div>
+
+
+
+
+
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+<table>
+
+
+<tr>
+<td><a href=""><p class="swm_text">Ferrari</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">FIAT</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Ford</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Genesis</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Honda</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Hyundai</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">INFINITI</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Jaguar</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Jeep</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Kia</p></a></td>
+</tr>
+
+
+</table>
+</div>
+
+
+
+
+
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+<table>
+
+
+<tr>
+<td><a href=""><p class="swm_text">Lamborghini</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Land Rover</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Lexus</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Lincoin</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Lotus</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Maserati</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Mazda</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Mclaren</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Mercedes Benz</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">MINI</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Mitsubishi</p></a></td>
+</tr>
+
+
+</table>
+</div>
+
+
+
+
+
+
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+<table>
+
+
+<tr>
+<td><a href=""><p class="swm_text">Nissan</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Porsche</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">RAM</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Rolls Royce</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Scion</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">smart</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Subaru</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Tesla</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Toyota</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Volkswagen</p></a></td>
+</tr>
+
+<tr>
+<td><a href=""><p class="swm_text">Volvo</p></a></td>
+</tr>
+
+
+</table>
+</div>
+
+</div>
+
+<BR><BR><BR>
+
+<div class="centralize_words">
+<a name="type"><h5 class="display-3" style="color:#009688; font-size:16px; font-weight:bold; text-decoration:underline;">Search with type</h5></a>
+</div>
 <div class="col-md-3" "col-sm-3">
 	<div class="thumbnail" id="section1">
 	<img src="hsam2.jpg" alt="" class="image-responsive advertimage">
@@ -650,7 +941,7 @@ alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
 	
 	</div>
 	</div>
-	<a href="aboutus.html"><b style="letter-spacing:1px">About us</b></a>   &nbsp&nbsp&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px">Car blog</b></a>  &nbsp&nbsp&nbsp&nbsp     <a href="aboutus.html"><b style="letter-spacing:1px">Motor sports</b></a>    &nbsp&nbsp&nbsp&nbsp      <a href="aboutus.html"><b style="letter-spacing:1px">F-A-Q</b></a> <BR><BR><p>Copy &copy Right Reserved By HighSkoolAutosMobile <span class="customizationA">|</span> </p>
+	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">About us</b></a>   &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Advertise</b></a>  &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Buy a Car</b></a>   &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html" ><b style="letter-spacing:1px" class="quicklinks">Car blog</b></a>  &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Car Dealer</b></a>    &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Car Production Site</b></a>  &nbsp&nbsp|&nbsp&nbsp  &nbsp&nbsp|&nbsp&nbsp      <a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">F-A-Qs</b></a> &nbsp&nbsp|&nbsp&nbsp     <a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Motor sports</b></a>   &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Sell a Car</b></a> &nbsp&nbsp|&nbsp&nbsp	<a href="aboutus.html"><b style="letter-spacing:1px" class="quicklinks">Terms and Condition</b></a>   <BR><BR><p>Copy &copy Right Reserved By HighSkoolAutosMobile <span class="customizationA">|</span> </p>
 	
 	</div>
 	</div>
@@ -662,7 +953,7 @@ alert("HighSkoolAutosMobile| BUY CAR| SELL CAR | CAR INSPECTION");
 	<div class="container">
 	<div class="row">
 	<div class="columA">
-    <div id="socialicons"><a href="http://api.whatsapp.com/send?phone=07011107461" target="_blank""><i class="fab fa-whatsapp decicon"></i></a> <a href="https://www.facebook.com/HSAautos"><i class="fab fa-facebook-square decicon"></i></a> <a href=""http://api.yahoo.com/send?mail=efeakpotor@yahoo.com"><i class="far fa-envelope decicon"></i></a> <a href="tel:+2347011107461"><i class="fas fa-phone decicon"></i></a> <a href=""><img src="jiji.jpg" height="33px" width="36px" id="jijidec"></a></div>
+    <div id="socialicons"><a href="http://api.whatsapp.com/send?phone=+23407011107461" target="_blank""><i class="fab fa-whatsapp decicon"></i></a> <a href="https://www.facebook.com/HSAautos"><i class="fab fa-facebook-square decicon"></i></a> <a href=""http://api.yahoo.com/send?mail=efeakpotor@yahoo.com"><i class="far fa-envelope decicon"></i></a> <a href="tel:+2347011107461"><i class="fas fa-phone decicon"></i></a> <a href=""><img src="jiji.jpg" height="33px" width="36px" id="jijidec"></a></div>
 	</div>
 	<div class="columB">
 	<div id="trademark"><p style="color:white; font-size:10px;" class="lead">UI | UX Developer is Orodje</p></div>
