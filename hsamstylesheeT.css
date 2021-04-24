@@ -8,7 +8,6 @@
 } 
 body { background:white;border:12px outset #030724; border-bottom-width:15em;border-top:none;}
 header{ height:70px;background:url(highskoolautomobilebackground.jpg);}
-/*#logo {width:40%;margin-left:auto;margin-right:auto;}*/
 #headerlinks{left:40%;top:35%;position:absolute;display;flex;}
 .buttonstyle{width:150px;height:25px;border-radius:5%;}
 #headerlinks ul { border:2px solid black;float:right;display:flex;position:relative;top:-60px;right:10px;vertical-align:center;}
@@ -16,7 +15,7 @@ ul {display:flex;}
 #headerlinks > .connect { text-decoration:none;text-align:center;font-weight:bolder;margin:10px;padding:10px;justify-content:space-between;}
 main {background:white;width:100%;margin-top:100px;}
 section {background:white; width:100%; margin-top:50px;}
-#section2 {padding-top:50px;height:auto;color: #fff; background-color:	beigh/*#009688*/;}
+#section2 {padding-top:50px;height:auto;color: #fff; background-color:	beigh}
 #section3 {padding-top:50px;height:auto;color: #fff; background-color:transparent;}
 #section4 {padding-top:50px;height:auto;color: #fff; background:url(hsam3.jpg);}
 #section5 {padding-top:50px;}
@@ -50,7 +49,7 @@ li {list-style-type:none;}
 .header {color:#030724;}
 .quicklinks {font-size:120%;color:#030724;} #quicklinks {word-spacing:3px;}
 .centralize_words {text-align:center; width:50%;margin:auto;place-item:center;justify-content:center;}
-.search_with_make {text-align:center; line-height:4em; width:100%;margin-left:auto;margin-right:auto;} .swm_text {font-size:15px; letter-spacing:1px;}
+.search_with_make {text-align:center; line-height:15em; width:100%;margin-left:auto;margin-right:auto;} .swm_text {font-size:15px; letter-spacing:1px;}
 /*MEDIA QUERIES BEGINS*/
 
 
@@ -76,7 +75,7 @@ ul>li{margin-right:-50px;color:white;font-size:10px;letter-spacing:1px;line-heig
 #section1 {background:#030724;animation:none;margin:1px;border-bottom-radius:1%;transition:none;}
 #section1:hover {transform:none;}
 #quicklinks {line-height:2.5em;}
-.search_with_make {text-align:center;line-height:5em; width:50%;margin-left:auto;margin-right:auto;}
+.search_with_make {text-align:center;line-height:12em; width:50%;margin-left:auto;margin-right:auto;}
 .contentdecorator{margin-left:10px;}
 .tabs {width:50%; margin:auto;color:#009688}
 #buttonsdecoration{margin:5px;}
