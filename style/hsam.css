@@ -1,0 +1,827 @@
+
+
+@font-face{
+  src:url(../font-style/Roboto-Regular.ttf);
+  font-family:Roboto-Regular;
+  }
+
+* {
+  line-height: 0.5cm;
+  font-family:Roboto-Regular;
+  letter-spacing: 1.5px;
+  padding: none;
+  margin: none ;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: monospace;
+  margin:0;
+  padding:0;
+}
+
+header {
+  border:1px solid white;
+  height:70vh;
+  z-index:1;
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+  width:100%;
+ 
+}
+
+.nav_quick_links {
+  height:1.5cm;
+  width:100%;
+}
+
+.social_media_tr {
+  border:1px solid white;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  height:100%;
+  color:white;
+  display: flex;
+}
+
+.social_media_tr_one, .social_media_tr_two {
+  line-height: 3.5em;
+}
+
+.social_media_tr_one {
+  border:1px solid yellow;
+  display:flex;
+}
+
+
+.social_media_tr_two {
+  margin-left:30%;
+  border:1px solid red;
+  display:flex;
+
+}
+
+.social_media_td {
+  color:white;
+  font-size:2px
+}
+
+nav{
+  background:url(highskoolautomobilebackground.jpg);
+  height:80px;
+  width: 100%;
+  margin:0;
+  padding:0;
+  position: fixed;
+  z-index: 1;
+  border:1px solid transparent;
+  margin-top:-0.2%;
+}
+
+#welcome_note {
+  border:1px solid transparent;
+  margin-top: 8%;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  line-height:1.5cm;
+}
+
+#welcome_note_content_A, #welcome_note_content_B {
+  color:white;
+  line-height:1cm;
+  text-align:center
+}
+
+
+#welcome_note_button_links {
+  border:1px solid transparent;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inventory_button {
+  background:#e40000;
+  color:white;
+  width:48%;
+  height:1cm;
+  font-size: 18px;
+  cursor:pointer;
+  border-radius: 50%;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 10ms;
+  transition-duration: 1s;
+}
+
+#inventory_button:hover {
+  background:teal;
+  color:white;
+}
+
+#learn_more_button {
+  background: teal;
+  color:white;
+  width:49%;
+  height:1cm;
+  font-size: 18px;
+  cursor:pointer;
+  border-radius: 50%;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 10ms;
+  transition-duration: 1s;
+}
+
+#learn_more_button:hover {
+  background: red;
+  color:white;
+}
+
+.content_advert_one {
+  background:#e40000;
+  color:white;
+  height:8vh;
+  font-size:12px;
+  text-align: center;
+  margin-top:-2.5%;
+  
+}
+
+.content_advert_one_text {
+  color:black;
+  border:1px solid black;
+  line-height: 7.5vh;
+}
+
+#checkbtn_design {
+  margin-top:-20px;
+}
+
+
+label.logo{
+  padding: 0 100px;
+  margin-top: -20px;
+}
+nav ul{
+  float:right;
+  margin-right: 1cm;
+  border:1px solid transparent;
+  margin-top:-1.6%;
+  width:70%
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 20px;
+}
+
+nav ul li a{
+  color:white;
+  padding:7px 13px;
+  font-size: 17px;
+}
+
+li>a:hover{
+  text-decoration: underline 10px crimson;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-delay: 10ms;
+  transition-duration: 2s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+
+#check{
+display: block;
+}
+
+
+
+
+#about_us img {
+  border:1px solid black;
+  width:100%;
+  height:15cm;
+  z-index: -1;
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  position: relative;
+  opacity: 0.92;
+  margin-top:-10%
+}
+
+#about_us_word {
+  text-align:center;
+  color: white;
+  font-size: 50px;
+  position:absolute;
+  margin-left:40%;
+  border:1px solid black;
+  z-index:-1;
+  opacity: 2;
+}
+
+
+h5 {
+    text-align:center;
+    font-size:large;
+    font-weight:bolder;
+
+}
+
+
+/*about us sections styling*/
+#about_us_sections{
+  border:1px solid transparent;
+  height:60vh;
+  width:100%;
+  display:flex;
+}
+
+
+/*About us Image*/
+#about_us_image {
+  position:absolute;
+  margin-top: -200px; 
+  width:50px;
+  height:50px;
+}
+
+
+
+/*about us section one styling*/
+#about_us_section_one {
+  border:1px solid transparent;
+  height:100vh;
+  width:50%;
+  background-color: #0477bf;
+  margin: 2%;
+  /* margin-top: 14.5%; */
+  box-shadow: 2px 2px #0477bf ;
+  color: white;
+  border-radius: 1.5%;
+}
+
+
+/*about us section two styling*/
+#about_us_section_two {
+  border:1px solid yellow;
+  height:60vh;
+  width:80%;
+  background-color: crimson;
+  margin: 2%;
+  color:white;
+  border-radius: 1.5%;
+}
+
+
+/* about us section one header */
+.about_us_section_one_header {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  padding: 0;
+  border:1px solid red;
+}
+
+
+/* about us section one content style */
+.about_us_section_one_content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0%;
+  border:1px solid red;
+  border-radius: 2ch;
+  color:black;
+  height:74vh;
+  overflow-y:scroll;
+}
+
+/* about us section one content style and copy rights section one styling*/
+.about_us_section_one_content .copy_rights_section_one {
+  line-height: 0.6cm;
+  padding:10px;
+  margin:10px;
+}
+
+
+
+.about_us_section_two_header {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  padding: 0;
+  border:1px solid white;
+}
+
+
+.about_us_section_two_content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0%;
+  border:1px solid white;
+  border-radius: 2ch;
+  color:black;
+  height:74vh;
+  overflow-y:scroll;
+}
+
+
+/*footer styling*/
+footer {
+    height:120vh;
+    background:url(highskoolautomobilebackground.jpg);
+    margin-top:35vh;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  
+}
+
+
+.footer_div {
+  border:1px solid transparent;
+ 
+}
+
+
+.footer_sections {
+  border-bottom:1px dashed white;
+  width:90%;
+  height:29vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50vh;
+  display:flex;
+}
+
+.footer_section_one {
+  border:1px solid transparent;
+  width: 22%;
+  height:33vh;
+  margin-right: 2.5%;
+}
+
+.footer_section_two {
+  border:1px solid transparent;
+  width: 22%;
+  height:33vh;
+  margin-right: 2.5%;
+}
+
+.footer_section_three {
+  border:1px solid transparent;
+  width: 22%;
+  height:33vh;
+  margin-right: 2.5%;
+}
+
+.footer_section_four {
+  border:1px solid transparent;
+  width: 22%;
+  height:33vh;
+  margin-right: 2.5%;
+}
+
+
+.footer_description_table {
+  color: white;
+  border:1px solid transparent;
+  font-weight: bolder;
+  font-size: large;
+  word-spacing: 0.2cm;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.2cm;
+}
+
+.footer_description_detail a{
+  color: white;
+  border:1px solid transparent;
+  line-height: 0.6cm;
+  font-size:11.5px;
+}
+
+.footer_description_detail a:hover {
+  color: crimson;
+  text-decoration: underline white 2px;
+}
+
+.copy_rights_section {
+  border:1px solid transparent;
+  width: 80%;
+  height:100%;
+  text-align:center;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:12px;
+  
+}
+
+
+
+
+.back_to_top {
+  background: black;
+  bottom:16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  align-items: center; 
+  justify-content:center; 
+  font-size:32px; 
+  color:red; 
+  text-decoration:none;  
+  opacity:0; 
+  pointer-events: none; 
+  transition:all .3s; 
+  animation:toTop 3s ease infinite;
+  position:fixed;
+  z-index: 1;
+}
+
+
+
+.back_to_top.active {opacity:1; pointer-events: auto; bottom: 32px;}
+
+@keyframes toTop {
+    10%{color:red;}
+    30%{color:yellow;}
+    50%{color:green;}
+    70%{color:red;}
+    90%{color:yellow;}
+    100%{color:green;}
+}
+
+/*media queries(mobile view)*/
+    @media(max-width:600px){
+
+        #about_us_sections{
+            height:auto;
+            display:inline-block;
+          }
+
+          #about_us_section_one {
+            width:100%;
+            margin:0;
+            padding:0;
+            margin-bottom:1cm;
+            border-radius: 0;
+            height:100%
+          }
+          
+          #about_us_section_two {
+            width:100%;
+            height:100%;
+            overflow:auto;
+            background:green;
+            margin:0;
+            padding:0;
+            border-radius: 0;
+          }
+
+          /* about us section one content style */
+    .about_us_section_one_content {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 0%;
+      border:1px solid red;
+      border-radius: 2ch;
+      color:black;
+      height:100%;
+      overflow:auto;
+    }
+
+    /* about us section one content style and copy rights section one styling*/
+    .about_us_section_one_content .copy_rights_section_one {
+      line-height: 0.6cm;
+      padding:10px;
+      margin:10px;
+    }
+
+
+
+    .about_us_section_two_header {
+      margin:0%;
+      padding:0%;
+      width:100%;
+      margin-top: 1%;
+      padding: 0;
+      border:1px solid white;
+    }
+
+
+    .about_us_section_two_content {
+      margin:0%;
+      padding:0%;
+      width:100%;
+      border:1px solid white;
+      border-radius: 2ch;
+      color:black;
+      height:100%;
+      overflow:auto;
+    }
+
+    footer {
+    height:100%;
+    background:url(highskoolautomobilebackground.jpg);
+    margin-top:35vh;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+
+      .footer_sections {
+        border:1px solid white;
+        width:100%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        display:inline-block;
+      }
+      
+      .footer_section_one {
+        border:1px solid red;
+        width: 100%;
+        height:33vh;
+      }
+      
+      .footer_section_two {
+        border:1px solid orange;
+        width: 100%;
+        height:33vh;
+      }
+      
+      .footer_section_three {
+        border:1px solid pink;
+        width: 100%;
+        height:33vh;
+      }
+      
+      .footer_section_four {
+        border:1px solid goldenrod;
+        width: 100%;
+        height:33vh;
+      }
+
+      .copy_rights_section {
+        border:1px solid goldenrod;
+        width: 100%;
+        height:100%;
+        text-align:center;
+        justify-content: center;
+        color: white;
+      }
+
+
+
+      .We_apperciate_your_feedback {
+        text-align:left; 
+        font-size:22px; 
+        color:#00a5b8; 
+        word-spacing:3px; 
+        letter-spacing:2px; 
+        font-weight:10px;
+      } 
+
+      .feedbackform_questions {
+        font-size:16px; 
+        word-spacing:3px; 
+        letter-spacing:2px; 
+        font-weight:10px;
+      } 
+
+      .feedbackFormPart1 {
+        line-height:3em;
+      }
+
+      .feedback_expression {
+        cursor:pointer; 
+        position: relative; 
+        margin-top:9px; 
+        margin-left: 5%; 
+        width:60px; 
+        height:60px; 
+        z-index:1 ;
+      }
+
+      #aboutwe_feedback_form {
+        border:2px dashed rgb(255, 255, 255);
+        line-height: 1.8em; 
+        margin-top:0px; 
+        margin-left:0px; 
+        margin-right:0px; 
+        margin-bottom:20px; 
+        padding: 0%; 
+        background-color: whitesmoke; 
+        border-radius:3%;  
+        color:black; 
+        width:100%;
+      }
+
+      .feedback_emoji_dec{
+        float:left; 
+        border:1px solid red; 
+        background:yellow; 
+        width:100%;
+        display:flex;
+      }
+
+      .feedback_expression_labels {
+        font-size:50px; 
+        cursor:pointer;
+      }
+
+      .feedback_expression_writeup {
+        display:none; 
+        font-size:13px; 
+        margin:10%; 
+        background:rgb(228, 165, 4); 
+        color:whitesmoke; 
+        font-weight:bolder; 
+        margin-top:-20%; 
+        border-radius:5%;
+      }
+
+      .feedback_points {
+        width:18px; 
+        height:23px; 
+        color:black;
+      }
+
+      .feedback_points_labels {
+        position:absolute; 
+        margin-top:-30px; 
+        font-size: 12px; 
+        color:red;
+      }
+
+      #feedback_button_div {
+        border:1px solid whitesmoke; 
+        width:100%;
+        margin-top:50px; 
+        margin-left:0px; 
+        margin-right:0px; 
+        margin-bottom:0px;  
+        padding:0;
+      }
+
+      .aboutwe_feedback_button1{
+        border:3px solid #00a5b8; 
+        width:50%; 
+        cursor:pointer; 
+        height:1cm; 
+        border-top-left-radius: 1rem; 
+        border-top-right-radius: 1rem; 
+        border-bottom-right-radius: 1rem; 
+        border-bottom-left-radius: 1rem;
+        padding-left:10px; 
+        padding-right:10px; 
+        margin:5px; text-align:center; 
+        background:#00a5b8; 
+        color:white; 
+        font-weight:bolder; 
+        font-size:22px;
+      }
+
+      .aboutwe_feedback_button1:hover{
+        text-decoration: underline 2px whitesmoke;
+      }
+
+      .aboutwe_feedback_button2{
+        border:3px solid whitesmoke; 
+        cursor:pointer; 
+        height:1cm;
+        border-radius:1cm; 
+        background:whitesmoke; 
+        color:#00a5b8; 
+        font-weight:bolder; 
+        font-size:17px;
+      }
+
+      .aboutwe_feedback_button2:hover {
+        text-decoration: underline #00a5b8 3px; 
+        transition-property:underline; 
+        transition-duration: .2s; 
+        transition-timing-function:ease-in-out; 
+        transition-delay: 0s;
+      }
+
+      .feedback_form_text {
+        width:85%
+      }
+
+      .feedbackFormPart3 {
+        margin-top:25px;
+      }
+      
+      #feedback_button_div {
+        margin-top:4cm;
+      }
+
+}
+
+
+
+
+@media (max-width:858px){
+
+
+
+  header {
+    border:1px solid white;
+    height:50vh;
+    background:url(highskoolautomobilebackground.jpg);
+    z-index:1;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    width:100%;
+    /* border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%; */
+  }
+  nav{
+    background:url(highskoolautomobilebackground.jpg) ;
+    height:80px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    position: fixed;
+    z-index: 1;
+    border:1px solid white;
+    margin-top:-0.5%;
+  }
+
+
+  .checkbtn{
+      display: block;
+  }
+
+ul{
+  position: fixed;
+ width:100% !important;
+ height:100vh;
+ background:url(highskoolautomobilebackground.jpg) ; 
+ top:80px;
+ left:0;
+ text-align: center;
+ transition: all .5s
+}
+
+
+
+nav ul li{
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
+  
+   }
+
+
+
+    a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:#0082e6;
+    }
+
+    #check:checked ~  ul{
+        left:-100%;
+    }
+
+
+
+
+
+
+}
+
+
+@media (max-width: 952px) {
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
