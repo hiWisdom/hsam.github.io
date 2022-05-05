@@ -28,7 +28,7 @@ body{
 }
 
 header {
-  border:1px solid white;
+  border:1px solid transparent;
   height:60vh;
   z-index:2;
   /* clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%); */
@@ -78,10 +78,6 @@ header {
 } 
 
 
-.car_Image_Background {
-  background: url(th.jpg);
-}
-
 .svg_path_link_text {
   position: absolute;
   font-size:12px;
@@ -122,13 +118,16 @@ header {
 }
 
 nav{
-  height:80px;
+  height:85px;
   width: 100%;
   margin:0;
   padding:0;
   position: fixed;
   z-index: 1;
-  border:1px solid transparent;
+  border:1px groove white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   margin-top:-0.2%;
 }
 
@@ -225,15 +224,15 @@ nav ul{
   float:right;
   margin-right: 1cm;
   border:1px solid transparent;
-  margin-top:-5.6%;
+  margin-top:-4.7%;
   width:80%;
   display:flex;
 }
 
 nav ul li{
   display: inline-block;
-  line-height: 80px;
-  margin:0 20px;
+  line-height: 60px;
+  margin:1px 5px;
 }
 
 nav ul li a{
@@ -420,7 +419,7 @@ main {
 }
 
 content {
-  border: 1px solid crimson;
+  border: 1px solid transparent;
 }
 
 #main_image_showcase  img {
@@ -431,6 +430,66 @@ height:70vh;
 
 #main_image_showcase {
   text-align: center;
+}
+
+.car_main_design {
+  border: 1px solid white;
+  height: 10vh;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width:40%;
+}
+
+.car_main_design_A {
+  border: 1px solid white;
+  height: 10vh;
+  width: 20%;
+  margin:auto;
+}
+
+.car_main_design_B {
+  border: 1px solid white;
+  height: 10vh;
+  width: 20%;
+  margin:auto;
+}
+
+.car_main_design_C {
+  border: 1px solid white;
+  height: 10vh;
+  width: 20%;
+  margin:auto;
+}
+
+.s2_div_two {
+    border: 1px solid transparent;
+    height: 100vh;
+    width:100%;
+}
+
+.ending_contents {
+  border: 1px solid transparent;
+  width:50%;
+  margin-top:10.2%;
+  margin-left:7.2%;
+  text-align: left;
+  line-height: 2.5em;
+}
+
+.ending_contents, h1, p {
+  line-height: 1.1em;
+}
+
+#subscribe_now_button {
+  border-radius: 10%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#subscribe_now_paragraph {
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -841,13 +900,12 @@ footer {
     height:50vh;
     background:url(highskoolautomobilebackground.jpg);
     z-index:1;
-    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
     width:100%;
     /* border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%; */
   }
   nav{
-    background:url(highskoolautomobilebackground.jpg) ;
+    background:;
     height:80px;
     width: 100%;
     margin:0;
@@ -871,16 +929,16 @@ ul{
  top:80px;
  left:0;
  text-align: center;
- transition: all .5s
+ transition: all .5s; 
 }
 
 
 
 nav ul li{
-    display:block;
+    display:;
     margin: 50px 0;
     line-height: 30px;
-  
+    border: 1px solid white;
    }
 
 

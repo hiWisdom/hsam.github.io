@@ -12,7 +12,18 @@ footer {
 
 .nav_quick_links {
     background:url(unnamed.jpg);
-
-
 }
+
+
+.s2_div_two {
+    background:url(th.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#subscribe_now_button {
+    background: url(highskoolautomobilebackground.jpg);
+   }
+
+
   
